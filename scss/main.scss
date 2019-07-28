@@ -12,3 +12,33 @@ body
 }
 
 .content { margin-top:50px; }
+
+
+.consultant {
+	position: fixed;
+	bottom: -5px;
+	right: -5px;
+
+	img {
+		width: 400px;
+		position: relative;
+		animation-name: consultant;
+		-webkit-animation-name: example;
+		-webkit-animation-duration: 3s;
+		-webkit-animation-iteration-count: 1;
+		animation-name: consultant;
+		animation-duration: 3s;
+		animation-iteration-count: 1;
+		cursor: pointer;
+
+		&:hover {
+			opacity: 0.9;
+		}
+	}
+}
+
+@keyframes consultant {
+	0%   {bottom: -1000px; right: -500px;}
+	30%  {bottom: -1000px; right: -500px;}
+	100% {bottom: 0px; right: 0px;}
+}

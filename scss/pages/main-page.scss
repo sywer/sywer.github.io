@@ -71,11 +71,11 @@
     padding: 40px 0;
     position: relative;
 
-    background: #1e5799; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover, #1e5799 0%, #f28282 100%); /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover, #1e5799 0%,#f28282 100%); /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center, #1e5799 0%,#f28282 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#f28282',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    //background: #1e5799; /* Old browsers */
+    //background: -moz-radial-gradient(center, ellipse cover, #1e5799 0%, #f28282 100%); /* FF3.6-15 */
+    //background: -webkit-radial-gradient(center, ellipse cover, #1e5799 0%,#f28282 100%); /* Chrome10-25,Safari5.1-6 */
+    //background: radial-gradient(ellipse at center, #1e5799 0%,#f28282 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#f28282',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .mp-advantages
@@ -83,4 +83,24 @@
     padding: 40px 0;
     position: relative;
 
+}
+
+.mp-epileptic-background {
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: epileptic;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: epileptic;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+/* Standard syntax */
+@keyframes epileptic {
+  0%   {background-color:red; }
+  25%  {background-color:yellow; }
+  50%  {background-color:blue; }
+  75%  {background-color:green; }
+  100% {background-color:red; }
 }
