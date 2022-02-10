@@ -24,7 +24,7 @@
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^11.1.1",
     "css-loader": "^0.28.7",
-    "node-sass": "^4.7.2",
+    "node-sass": "^7.0.0",
     "sass-loader": "^6.0.6",
     "uglifyjs-webpack-plugin": "^2.0.1",
     "webpack": "^3.9.1"
